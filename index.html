@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta elements -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. This my home page or Gerardo Soto home page, for the course Web Fundaentals, the purpose of this page is to practice basic stuffs to create a web page">
+    <meta name="author" content="Gerardo Soto">
+    <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript file with defer -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello word this is me</h1>
-    <h2>like to be</h2>
+    <!-- Header section -->
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Gerardo Soto </h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/gerardo-soto-b91ba1159" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section with two cards -->
+    <main style="display: flex; gap: 1rem;">
+        <!-- First card: About Me -->
+        <section class="card about-me" style="flex: 3; display: flex; flex-direction: column; gap: 1rem;">
+            <h2>About Me</h2>
+            
+            <!-- First Paragraph: About the Profile -->
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <div style="flex: 1;">
+                    <p>
+                        Hello! My name is Gerardo Soto and I from State of Mexico, Mexico. I enjoy playing video games and spending time with my 
+                        family I was born on January 10; I have been a member of the Church of Jesus Christ of Latter-day Saints since I was born,
+                        although I was not born into the covenant. I served as a full-time Missionary
+                        for 2 years in the Mexico Monterrey West Mission. Today I am married and have a small son who is just 2 years old. I like 
+                        technology although sometimes it can be a bit complicated to keep up to date with all the changes there are.
+                    </p>
+                </div>
+                <div style="flex: 1;">
+                    <!-- Placeholder for an image; replace with your actual image -->
+                    <img src="images/profile.jpeg" alt="Profile Photo" class="profile-photo">
+                </div>
+            </div>
+            
+            <!-- Second Paragraph: About Mexico -->
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <div style="flex: 1;">
+                    <!-- Placeholder for the flag of Mexico -->
+                    <img src="images/mexico_flag.jpg" alt="Flag of Mexico" style="width: 100%; height: auto; border-radius: 8px;">
+                </div>
+                <div style="flex: 2;">
+                    <p>
+                        Mexico is a country full of culture, tradition and history. From its incredible natural landscapes, such as the beaches
+                        of Cancun and the deserts of the north, to its ancient Mayan and Aztec ruins, there is something for everyone. Mexico is
+                        also known for its delicious cuisine and the warmth of its people.
+                    </p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Second card: Web Dev Resources -->
+        <section class="card resources" style="flex: 1;">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Documentation - MDN</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Documentation - MDN</a></li>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">HTML Tutorial - W3Schools</a></li>
+            </ul>
+        </section>
+    </main>
+    
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 👾 Gerardo Soto 👾 State of Mexico, Mexico.</p>
+        <p id="lastModified" style="color: yellow;"></p>
+    </footer>
 </body>
+
 </html>
