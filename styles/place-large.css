@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .data-card {
+        /* Elimina el ancho y establece la alineación */
+        width: auto; 
+    }
+
+    .weather-card {
+        width: 25%; /* Mantiene el tamaño más pequeño */
+    }
+
+    /* Mantiene el icono del clima en la vista grande */
+    .weather-icon::after {
+        content: ' ⛅';
+        font-size: 2rem;
+    }
+
+    .weather-img {
+        display: none; 
+    }
+}

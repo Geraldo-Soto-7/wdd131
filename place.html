@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. This is web page about the place where I live, for the course Dynamic Web Fundaentals">
+    <meta name="Gerardo Soto" content="Gerardo Soto">
+    <title>WDD 131 - Dynamic Web Fundamentals - Gerardo Soto - Place</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>México</h1>
+    </header>
+
+    <!-- Elemento principal con la imagen "hero" -->
+    <main>
+        <img src="images/mexico.jpg" alt="Imagen de México" class="hero-image">
+        
+        <!-- Tarjeta 1: Data -->
+        <div class="card data-card">
+            <h2>Data</h2>
+            <p>Area: 1,964,375 sq km</p>
+            <p>Population: 129.5 million</p>
+            <p>Capital: Mexico City</p>
+            <p>Languages: Official: Spanish</p>
+            <p>Currency: Mexican Peso (MXN)</p>
+            <p>Time Zone: CST, UTC−6</p>
+            <p>Calling code: +52</p>
+            <p>Internet TLD: .mx</p>
+        </div>
+
+        <!-- Tarjeta 2: Weather -->
+        <div class="card weather-card">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <img src="images/weather.png" alt="Weather icon" class="weather-img">
+            <p>Temperature: 18° C </p>
+            <p>Conditions: Partly Cloud </p>
+            <p>Wind: 5km/h </p>
+            <p>Wind Chill: 10°C</p>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© <span id="currentyear"></span>👾 Gerardo Soto 👾 México</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
